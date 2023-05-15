@@ -267,13 +267,13 @@
 #contents_in .control1 p {
     color: #b9956f;
     font-size: 3.6vw;
-    padding-left: 50px;
+    padding-left: 10px;
 }
 
 #contents_in .control1 h2 {
     font-size: 4.5vw;
     color: #000;
-    padding-left: 50px;
+    padding-left: 10px;
 }
 
 #contents_in .control1 .bg {
@@ -403,10 +403,12 @@
 }
 
 /* ---------------------- */
+
 #contents_in .figure2 {
     width: 250px;
     height: 450px;
     border: 1px solid #000;
+    display: none;
 }
 
 #contents_in .figure2 .img2 {
@@ -476,6 +478,7 @@
     width: 250px;
     height: 450px;
     border: 1px solid #000;
+    display: none;
 }
 
 #contents_in .figure3 .img3 {
@@ -623,31 +626,18 @@
     content: '';
 }
 
+.figure1_area{
+    width: 60%;
+}
+
+
+.artist_area{
+    width: 60%;
+}
+
+
 /* 예술가 */
 
-/* 전체 */
-.artist_area {
-    width: 810px;
-    height: 450px;
-    position: absolute;
-    top: 5%;
-    left: 40%;
-    overflow: hidden;
-}
-
-.artist_area>ul {
-    width: 1350px;
-    height: 450px;
-    position: absolute;
-}
-
-.all2 {
-    box-sizing: border-box;
-    margin-right: 20px;
-}
-
-
-/* 전체 끝 */
 
 #contents_in .artist1 {
     width: 250px;
@@ -698,6 +688,7 @@
     width: 250px;
     height: 450px;
     border: 1px solid #000;
+    display: none;
 }
 
 #contents_in .artist_img2 {
@@ -743,7 +734,7 @@
     width: 250px;
     height: 450px;
     border: 1px solid #000;
-    /* display: none; */
+    display: none;
 }
 
 #contents_in .artist_img3 {
