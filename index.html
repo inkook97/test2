@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" media="screen and (max-width:1450px)" href="./css/main_1450.css">
+    <link rel="stylesheet" media="screen and (max-width:1200px)" href="./css/main_1200.css">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="./css/main_1000.css">
+    <link rel="stylesheet" media="screen and (max-width:700px)" href="./css/main_700.css">
+    <title>홈 갤러리</title>
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <!-- 전체 -->
+    <div id="wrap">
+
+        <!-- 상단 -->
+        <header id="header">
+            <div id="header_in">
+                <div class="logo">
+                    <a href=""><img src="./images/logo_ty1.png" alt="logo" /></a>
+                </div>
+                <ul class="nav">
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">ARTIST</a></li>
+                    <li><a href="">COLLECTION</a></li>
+                    <li><a href="">INFORMATION</a></li>
+                    <li><a href="">NEWS</a></li>
+                </ul>
+                <ul class="login_group">
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Join</a></li>
+                    <li><a href=""><img src="./images/search.png" alt="" width="25px" height="25px"></a></li>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="#">ABOUT</a>
+                            <a href="#">ARTIST</a>
+                            <a href="#">COLLECTION</a>
+                            <a href="#">INFORMATION</a>
+                            <a href="#">NEWS</a>
+                        </div>
+                    </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                </ul>
+            </div>
+        </header>
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+
+
+        <!-- 메인 -->
+        <section id="main_img">
+            <div id="main_img_in">
+                <h3>고객을 찾아가는 신개념 홈 갤러리로<br>작품을 대여, 판매 하고있습니다.</h3>
+                <div class="info">
+                    <ul class="sns">
+                        <li><a href=""><img src="./images/sns1.png" alt=""></a></li>
+                        <li><a href=""><img src="./images/sns2.png" alt=""></a></li>
+                        <li><a href=""><img src="./images/sns3.png" alt=""></a></li>
+                    </ul>
+                    <ul class="menu">
+                        <li><a href=""><img src="./images/마스크 그룹 1.png" alt=""></a></li>
+                        <li><a href=""><img src="./images/마스크 그룹 2.png" alt=""></a></li>
+                        <li><a href=""><img src="./images/마스크 그룹 3.png" alt=""></a></li>
+                        <li><a href=""><img src="./images/마스크 그룹 4.png" alt=""></a></li>
+                        <li><a href=""><img src="./images/마스크 그룹 5.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 컨텐츠 -->
+        <section id="contents">
+            <div id="contents_in">
+                <!-- 금주의  작품 -->
+                <div class="collection_box1">
+                    <!-- 작품 설명 -->
+                    <div class="control1">
+                        <p>Homegallery</p>
+                        <h2>금주의 작품</h2>
+                        <div class="bg">
+                            <p>디 오리지널 홈 갤러리의<br>
+                                금주의 작품을 확인해보세요.</p>
+                        </div>
+                        <div class="btns">
+                            <div class="btns_in">
+                                <button type="button" class="prev"><span>&#60;</span></button>
+                                <button type="button" class="next"><span>&#62;</span></button>
+                            </div>
+                            <div class="counts">
+                                <span class="count">1</span>
+                                <span class="total">2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 작품 종류 -->
+                    <div class="figure1_area">
+                        <ul>
+                            <li class="figure1 all">
+                                <div class="img1">
+                                    <a href=""><img src="./images/1662357762_3204_m.jpg" alt="" width="180px"
+                                            height="220px"></a>
+                                </div>
+                                <div class="figure_text1">
+                                    <span>Puppy</span>
+                                    <p>27.3 x 19.0 cm (10.7 x 7.5 in)</p>
+                                    <p>캔버스, 오일, 2022</p>
+                                </div>
+                                <div class="figure_name1">
+                                    <span>강유나</span>
+                                    <span>판매중</span>
+                                </div>
+                            </li>
+                            <li class="figure2 all">
+                                <div class="img2">
+                                    <a href=""><img src="./images/1662420230_3439_m.jpg" alt="" width="180px"
+                                            height="220px"></a>
+                                </div>
+                                <div class="figure_text2">
+                                    <span>보랏빛 나무</span>
+                                    <p>53.0 x 40.9 cm (20.9 x 16.1 in)</p>
+                                    <p>캔버스, 오일, 2022</p>
+                                </div>
+                                <div class="figure_name2">
+                                    <span>이우현</span>
+                                    <span>판매중</span>
+                                </div>
+                            </li>
+                            <li class="figure3 all">
+                                <div class="img3">
+                                    <a href=""><img src="./images/1659275674_9252_m.jpg" alt="" width="180px"
+                                            height="220px"></a>
+                                </div>
+                                <div class="figure_text3">
+                                    <span>해 후</span>
+                                    <p>90.9 x 72.7 cm (35.8 x 28.6 in)</p>
+                                    <p>패널, 실물압화, 한지 ,아크릴</p>
+                                </div>
+                                <div class="figure_name3">
+                                    <span>이충열</span>
+                                    <span>판매중</span>
+                                </div>
+                            </li>
+                            <li class="figure3 all">
+                                <div class="img3">
+                                    <a href=""><img src="./images/1659275674_9252_m.jpg" alt="" width="180px"
+                                            height="220px"></a>
+                                </div>
+                                <div class="figure_text3">
+                                    <span>해 후</span>
+                                    <p>90.9 x 72.7 cm (35.8 x 28.6 in)</p>
+                                    <p>패널, 실물압화, 한지 ,아크릴</p>
+                                </div>
+                                <div class="figure_name3">
+                                    <span>이충열</span>
+                                    <span>판매중</span>
+                                </div>
+                            </li>
+                            <li class="figure3 all">
+                                <div class="img3">
+                                    <a href=""><img src="./images/1659275674_9252_m.jpg" alt="" width="180px"
+                                            height="220px"></a>
+                                </div>
+                                <div class="figure_text3">
+                                    <span>해 후</span>
+                                    <p>90.9 x 72.7 cm (35.8 x 28.6 in)</p>
+                                    <p>패널, 실물압화, 한지 ,아크릴</p>
+                                </div>
+                                <div class="figure_name3">
+                                    <span>이충열</span>
+                                    <span>판매중</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <script>
+                    $(document).ready(function () {
+                        var all = $('.figure1_area>ul');
+                        var i = 0;
+                        var current; // i값을 고정시키기 위해서 선언함, 선언안하면 click이 계속 먹힘
+
+                        $('.next').click(function () {
+                            if (i < 0) {
+                                i = i + 1;
+                                all.animate({ left: "+=100%" });
+                                current = i;
+                            }
+                        });
+
+                        $('.prev').click(function () {
+                            if (i > -1) {
+                                i = i - 1;
+                                all.animate({ left: "-=100%" });
+                                current = i;
+                            };
+                        });
+                    });
+                </script>
+
+                <!-- 이달의  화가 -->
+                <div class="collection_box2">
+                    <!-- 작품 설명 -->
+                    <div class="control2">
+                        <p>Artist</p>
+                        <h2>이달의 화가</h2>
+                        <div class="bg">
+                            <p>이달의 최다판매<br>
+                                화를 소개합니다.</p>
+                        </div>
+                        <div class="btns2">
+                            <div class="btns_in2">
+                                <button type="button" class="prev2"><span>&#60;</span></button>
+                                <button type="button" class="next2"><span>&#62;</span></button>
+                            </div>
+                            <div class="counts2">
+                                <span class="count2">1</span>
+                                <span class="total2">2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 작품 종류 -->
+                    <div class="artist_area">
+                        <ul>
+                            <li class="artist1 all2">
+                                <div class="artist_img1">
+                                    <a href=""><img src="./images/이우현.png" alt="" width="180px" height="220px"></a>
+                                </div>
+                                <div class="artist_text1">
+                                    <p><span>2020</span>제4회 개인전</p>
+                                    <p><span>2019</span>제3회 개인전</p>
+                                    <p><span>2016</span>'형형색색' 개인전'</p>
+                                    <p><span>2014</span>'A glittering moment' 개인전</p>
+                                </div>
+                                <div class="artist_name1">
+                                    <span>이우현</span>
+                                </div>
+                            </li>
+                            <li class="artist2 all2">
+                                <div class="artist_img2">
+                                    <a href=""><img src="./images/이충열.png" alt="" width="180px" height="220px"></a>
+                                </div>
+                                <div class="artist_text2">
+                                    <p><span>2022</span>Art 99 Gallery 특별전</p>
+                                    <p><span>2021</span>미라클갤러리 2인전</p>
+                                    <p><span>2021</span>조선일보 라이프쇼</p>
+                                    <p><span>2021</span>SPACE 1257 2인전</p>
+                                </div>
+                                <div class="artist_name2">
+                                    <span>이충열</span>
+                                </div>
+                            </li>
+                            <li class="artist3 all2">
+                                <div class="artist_img3">
+                                    <a href=""><img src="./images/강유나.png" alt="" width="180px" height="220px"></a>
+                                </div>
+                                <div class="artist_text3">
+                                    <p><span>2022</span>국제호텔아트페어</p>
+                                    <p><span>2022</span>핑크아트페어</p>
+                                    <p><span>2022</span>BAMA</p>
+                                    <p><span>2021</span>부산국제아트e페어</p>
+                                </div>
+                                <div class="artist_name3">
+                                    <span>강유나</span>
+                                </div>
+                            </li>
+                            <li class="artist3 all2">
+                                <div class="artist_img3">
+                                    <a href=""><img src="./images/강유나.png" alt="" width="180px" height="220px"></a>
+                                </div>
+                                <div class="artist_text3">
+                                    <p><span>2022</span>국제호텔아트페어</p>
+                                    <p><span>2022</span>핑크아트페어</p>
+                                    <p><span>2022</span>BAMA</p>
+                                    <p><span>2021</span>부산국제아트e페어</p>
+                                </div>
+                                <div class="artist_name3">
+                                    <span>강유나</span>
+                                </div>
+                            </li>
+                            <li class="artist3 all2">
+                                <div class="artist_img3">
+                                    <a href=""><img src="./images/강유나.png" alt="" width="180px" height="220px"></a>
+                                </div>
+                                <div class="artist_text3">
+                                    <p><span>2022</span>국제호텔아트페어</p>
+                                    <p><span>2022</span>핑크아트페어</p>
+                                    <p><span>2022</span>BAMA</p>
+                                    <p><span>2021</span>부산국제아트e페어</p>
+                                </div>
+                                <div class="artist_name3">
+                                    <span>강유나</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <script>
+                    $(document).ready(function () {
+                        var all = $('.artist_area>ul');
+                        var i = 0;
+                        var current; // i값을 고정시키기 위해서 선언함, 선언안하면 click이 계속 먹힘
+
+                        $('.next2').click(function () {
+                            if (i < 0) {
+                                i = i + 1;
+                                all.animate({ left: "+=100%" });
+                                current = i;
+                            };
+                        });
+
+
+                        $('.prev2').click(function () {
+                            if (i > -1) {
+                                i = i - 1;
+
+                                all.animate({ left: "-=100%" });
+                                current = i;
+                            };
+                        });
+                    });
+                </script>
+
+                <!-- 이벤트 -->
+                <div class="event">
+                    <h2><a href="">THE ORIGINAL HOMEGALLERY 2023 이벤트</a></h2>
+                    <ul class="event_img">
+                        <li><a href=""><img src="./images/이벤트1.png" alt=""></a></li>
+                        <li><a href=""><img src="./images/이벤트2.png" alt=""></a></li>
+                        <li><a href=""><img src="./images/이벤트3.png" alt=""></a></li>
+                        <li><a href=""><img src="./images/이벤트4.png" alt=""></a></li>
+                    </ul>
+                </div>
+
+                <!-- 당신의 집이 갤러리 입니다. -->
+                <div class="gallery">
+                    <h2><a href="">당신의 집이 갤러리입니다</a></h2>
+                    <ul class="gallery_img">
+                        <li><a href=""><img src="./images/g1.jpeg" alt=""></a><span>밋밋한 느낌에서 희망찬 느낌으로 변했다</span></li>
+                        <li><a href=""><img src="./images/g2.jpg" alt=""></a><span>휑한 세련되고 고급스러워졌다</span></li>
+                        <li><a href=""><img src="./images/g3.jpg" alt=""></a><span>칙칙한 느낌이 평온한 느낌으로 변했다</span></li>
+                        <li><a href=""><img src="./images/g4.jpg" alt=""></a><span>화려한집에 화려함을 더했다</span></li>
+                    </ul>
+                </div>
+                <!-- more -->
+                <div class="more">
+                    <a href=""><span>More</span></a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 하단 -->
+        <footer id="footer">
+            <div id="footer_in">
+                <!-- 공지사항 -->
+                <ul class="news">
+                    <li><a href="">Notice</a></li>
+                    <li>
+                        <a href="">
+                            [대관공고] 2023년 부산미술관(2관) 수시 대관 공고문
+                        </a>
+                    </li>
+                </ul>
+                <!-- 주소 -->
+                <div class="address">
+                    <ul class="privacy">
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                    </ul>
+                    <br />
+                    <ul class="call">
+                        <li>디 오리지널 홈갤러리</li>
+                        <li>고객센터 1666-6457</li>
+                    </ul>
+                    <!-- <br /> -->
+                    <p>13544 경기 성남시 분당구 판교대장로7길 16-6 (대장동) 1층</p>
+                    <p>상호 : (주)하비우드</p>
+                    <p>대표자 : 전익관</p>
+                    <p>통신판매업신고번호 : 제2021-서울서초-1248호</p>
+                    <p>사업자등록번호 : 145-88-01125</p>
+                    <p>Copyright(C) 2021 HOBBYWOOD CO., Ltd. All Rights Reserved</p>
+                    <span class="logo_b"><img src="./images/logo_ty3.png" alt=""></span>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
