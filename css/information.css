@@ -1,0 +1,42 @@
+#wrap {
+    width: 100%;
+}
+
+#area {
+    width: 100%;
+}
+
+#area ul:nth-child(1) {
+    border-top: 3px solid blueviolet;
+}
+
+#area ul {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+#area li {
+    float: left;
+    width: 25%;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#area li:nth-child(1) {
+    background-color: #e7e7e7;
+    text-align: center;
+    font-weight: 600;
+}
+
+#area li:nth-child(3) {
+    background-color: #e7e7e7;
+    text-align: center;
+    font-weight: 600;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 20px;
+}

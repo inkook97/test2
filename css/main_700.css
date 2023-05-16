@@ -171,7 +171,6 @@
     width: 100%;
     margin: 0 auto;
     position: relative;
-    background: url(../images/메인이미지.png) no-repeat 20%;
 }
 
 #main_img_in>h3 {
@@ -387,7 +386,6 @@
     margin-top: 50px;
     margin-left: 0;
     margin-right: 0;
-    border: 1px solid #000;
 }
 
 #contents_in .figure1 .img1 {
@@ -399,7 +397,6 @@
 #contents_in .figure_text1 {
     width: 100%;
     height: 140px;
-    border-top: 1px solid #000;
     padding: 15px 10px;
     box-sizing: border-box;
 }
@@ -423,7 +420,6 @@
 #contents_in .figure_name1 {
     width: 100%;
     height: 60px;
-    border-top: 1px solid #000;
     float: left;
     line-height: 46px;
     box-sizing: border-box;
@@ -456,7 +452,6 @@
 #contents_in .figure2 {
     width: 250px;
     height: 450px;
-    border: 1px solid #000;
     float: right;
     margin-top: 100px;
     margin-right: 20px;
@@ -472,7 +467,6 @@
 #contents_in .figure_text2 {
     width: 100%;
     height: 140px;
-    border-top: 1px solid #000;
     padding: 15px 10px;
     box-sizing: border-box;
 }
@@ -496,7 +490,6 @@
 #contents_in .figure_name2 {
     width: 100%;
     height: 60px;
-    border-top: 1px solid #000;
     float: left;
     line-height: 46px;
     box-sizing: border-box;
@@ -529,7 +522,6 @@
 #contents_in .figure3 {
     width: 250px;
     height: 450px;
-    border: 1px solid #000;
     float: left;
     margin-top: 100px;
     display: none;
@@ -544,7 +536,6 @@
 #contents_in .figure_text3 {
     width: 100%;
     height: 140px;
-    border-top: 1px solid #000;
     padding: 15px 10px;
     box-sizing: border-box;
 }
@@ -568,7 +559,6 @@
 #contents_in .figure_name3 {
     width: 100%;
     height: 60px;
-    border-top: 1px solid #000;
     float: left;
     line-height: 46px;
     box-sizing: border-box;
@@ -695,7 +685,6 @@
     margin-top: 50px;
     margin-left: 0;
     margin-right: 0;
-    border: 1px solid #000;
     position: absolute;
 }
 
@@ -708,7 +697,6 @@
 #contents_in .artist_text1 {
     width: 100%;
     height: 140px;
-    border-top: 1px solid #000;
     padding: 15px 10px;
     box-sizing: border-box;
     font-size: 14px;
@@ -724,7 +712,6 @@
 #contents_in .artist_name1 {
     width: 100%;
     height: 60px;
-    border-top: 1px solid #000;
     float: left;
     line-height: 46px;
     box-sizing: border-box;
@@ -741,7 +728,6 @@
 #contents_in .artist2 {
     width: 250px;
     height: 450px;
-    border: 1px solid #000;
     float: right;
     margin-top: 100px;
     margin-right: 20px;
@@ -757,7 +743,6 @@
 #contents_in .artist_text2 {
     width: 100%;
     height: 140px;
-    border-top: 1px solid #000;
     padding: 15px 10px;
     box-sizing: border-box;
     font-size: 14px;
@@ -773,7 +758,6 @@
 #contents_in .artist_name2 {
     width: 100%;
     height: 60px;
-    border-top: 1px solid #000;
     float: left;
     line-height: 46px;
     box-sizing: border-box;
@@ -790,7 +774,6 @@
 #contents_in .artist3 {
     width: 250px;
     height: 450px;
-    border: 1px solid #000;
     float: left;
     margin-top: 100px;
     display: none;
@@ -805,7 +788,6 @@
 #contents_in .artist_text3 {
     width: 100%;
     height: 140px;
-    border-top: 1px solid #000;
     padding: 15px 10px;
     box-sizing: border-box;
     font-size: 14px;
@@ -821,7 +803,6 @@
 #contents_in .artist_name3 {
     width: 100%;
     height: 60px;
-    border-top: 1px solid #000;
     float: left;
     line-height: 46px;
     box-sizing: border-box;
@@ -947,14 +928,14 @@
 
 /* 하단 */
 #footer {
-    width: 100;
+    width: 100%;
     background-color: #302f2e;
     float: left;
 }
 
 #footer_in {
-    width: 100;
-    height: 550px;
+    width: 100%;
+    height: 320px;
     background-color: #302f2e;
     margin: 0 auto;
     position: relative;
@@ -1016,12 +997,12 @@
 
 #footer_in .call li {
     color: #b9956f;
-    font-size: 24px;
-    padding: 20px 0;
+    font-size: 16px;
+    padding: 10px 0;
 }
 
 #footer_in .call li:last-child {
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 
 #footer_in .call li:first-child {
@@ -1030,9 +1011,7 @@
 
 #footer_in .address p {
     color: #797877;
-
-    font-size: 16px;
-    padding: 10px 0;
+    font-size: 13px;
     box-sizing: border-box;
 }
 

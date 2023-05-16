@@ -16,15 +16,16 @@
 }
 
 #header_in .logo {
-    float: left;
-    margin-left: 250px;
-    line-height: 130px;
+    display: flex;
+    justify-content: center;
+    width: 70%;
 }
 
 #header_in .nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    display: none;
 }
 
 
@@ -43,18 +44,20 @@
 }
 
 #header_in .nav li:last-child {
-    padding-right: 400px;
+    padding-right: 100px;
 }
 
 #header_in .login_group {
     position: absolute;
     top: 0px;
     right: 0px;
-    margin-right: 250px;
+    margin-right: 60px;
+    display: none;
 }
 
 #header_in .login_group li {
     float: left;
+    display: none;
 }
 
 #header_in .login_group li:after {
@@ -167,31 +170,30 @@
 
 #main_img_in {
     width: 100%;
-    height: 1100px;
+    height: 450px;
     margin: 0 auto;
     position: relative;
-    background: url(../images/메인이미지.png) no-repeat;
-    background-size: cover;
 }
 
 #main_img_in>h3 {
     color: #ffffff;
-    font-size: 35px;
-    width: 1100px;
-    height: 150px;
+    font-size: 2vw;
+    width: 75.8%;
+    height: 100px;
     background-color: #cccccc;
     position: absolute;
-    top: 500px;
+    top: 200px;
     display: flex;
     align-items: center;
     padding-left: 50px;
     box-sizing: border-box;
     opacity: 0.6;
+    display: none;
 }
 
 #main_img_in .info {
     width: 100%;
-    height: 300px;
+    height: 100px;
     background-color: #ccc;
     position: absolute;
     bottom: 0;
@@ -201,8 +203,9 @@
 
 #main_img_in .sns {
     float: left;
-    padding-top: 110px;
+    padding: 35px;
     box-sizing: border-box;
+    display: none;
 }
 
 #main_img_in .sns li {
@@ -211,25 +214,26 @@
 }
 
 #main_img_in .sns li:first-child {
-    padding-left: 50px;
+    padding-left: 10px;
 }
 
 
 
 #main_img_in .menu {
-    float: left;
+    float: right;
     padding-top: 70px;
     box-sizing: border-box;
+    display: none;
 }
 
 #main_img_in .menu li {
     float: left;
-    padding: 0 30px;
+    padding: 0 13px;
 }
 
 
 #main_img_in .menu li:first-child {
-    padding-left: 100px;
+    padding-left: 10px;
 }
 
 #main_img_in .menu li img {
@@ -243,50 +247,51 @@
 }
 
 #contents_in {
-    width: 1440px;
-    height: 3000px;
+    width: 100%;
+    height: 1500px;
     margin: 0 auto;
     box-sizing: border-box;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 #contents_in .collection_box1 {
-    width: 100%;
-    height: 650px;
+    width: 50%;
     float: left;
     position: relative;
+    left: 30%;
+    top: 50px;
 }
 
 #contents_in .control1 {
-    padding-top: 50px;
-    width: 500px;
-    height: 650px;
+    padding-top: 0;
+    width: 100%;
     float: left;
     box-sizing: border-box;
 }
 
 #contents_in .control1 p {
     color: #b9956f;
-    font-size: 36px;
-    padding-left: 100px;
+    font-size: 20px;
+    padding-left: 0;
 }
 
 #contents_in .control1 h2 {
-    font-size: 50px;
+    font-size: 30px;
     color: #000;
-    padding-left: 100px;
+    padding-left: 0;
 }
 
 #contents_in .control1 .bg {
-    width: 500px;
+    width: 300px;
     height: 120px;
     background-color: rgb(141, 176, 241);
-    border: 1px solid #ccc;
+    border: 1px solid #000;
     border-left: none;
+    display: none;
 }
 
 #contents_in .control1 .bg p {
-    font-size: 20px;
+    font-size: 2vw;
     color: rgb(99, 99, 99)
 }
 
@@ -294,13 +299,16 @@
     width: 500px;
     height: 70px;
     float: left;
-    margin-top: 140px;
+    margin-top: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 #contents_in .btns_in {
     width: 150px;
     height: 70px;
-    margin-left: 100px;
+    margin-left: 0;
     float: left;
 }
 
@@ -334,39 +342,54 @@
     content: '';
 }
 
-/* 작품 */
-
 /* 전체 */
 .all {
+    box-sizing: border-box;
+}
+
+.figure1_area {
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    left: -20%;
+    overflow: visible;
+}
+
+.figure1_area>ul {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+}
+
+/* 전체 */
+.artist_area {
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    overflow: visible;
+}
+
+.artist_area>ul {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+}
+
+.all2 {
     box-sizing: border-box;
     margin-right: 20px;
 }
 
-.figure1_area {
-    width: 810px;
-    height: 450px;
-    position: absolute;
-    top: 5%;
-    left: 40%;
-    overflow: hidden;
-}
-
-.figure1_area>ul {
-    width: 1350px;
-    height: 450px;
-    position: absolute;
-}
-
-
-
 /* 전체 끝 */
 
-
+/* 작품 */
 #contents_in .figure1 {
     width: 250px;
     height: 450px;
-    float: left;
-    border: 1px solid #ccc;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #contents_in .figure1 .img1 {
@@ -378,7 +401,6 @@
 #contents_in .figure_text1 {
     width: 100%;
     height: 140px;
-    border-top: 1px solid #ccc;
     padding: 15px 10px;
     box-sizing: border-box;
 }
@@ -402,7 +424,6 @@
 #contents_in .figure_name1 {
     width: 100%;
     height: 60px;
-    border-top: 1px solid #ccc;
     float: left;
     line-height: 46px;
     box-sizing: border-box;
@@ -435,8 +456,10 @@
 #contents_in .figure2 {
     width: 250px;
     height: 450px;
-    border: 1px solid #ccc;
-    float: left;
+    float: right;
+    margin-top: 100px;
+    margin-right: 20px;
+    display: none;
 }
 
 #contents_in .figure2 .img2 {
@@ -448,7 +471,6 @@
 #contents_in .figure_text2 {
     width: 100%;
     height: 140px;
-    border-top: 1px solid #ccc;
     padding: 15px 10px;
     box-sizing: border-box;
 }
@@ -472,7 +494,6 @@
 #contents_in .figure_name2 {
     width: 100%;
     height: 60px;
-    border-top: 1px solid #ccc;
     float: left;
     line-height: 46px;
     box-sizing: border-box;
@@ -505,8 +526,9 @@
 #contents_in .figure3 {
     width: 250px;
     height: 450px;
-    border: 1px solid #ccc;
     float: left;
+    margin-top: 100px;
+    display: none;
 }
 
 #contents_in .figure3 .img3 {
@@ -518,7 +540,6 @@
 #contents_in .figure_text3 {
     width: 100%;
     height: 140px;
-    border-top: 1px solid #ccc;
     padding: 15px 10px;
     box-sizing: border-box;
 }
@@ -542,7 +563,6 @@
 #contents_in .figure_name3 {
     width: 100%;
     height: 60px;
-    border-top: 1px solid #ccc;
     float: left;
     line-height: 46px;
     box-sizing: border-box;
@@ -571,69 +591,48 @@
     margin-top: 8px;
 }
 
-/* 박스2 */
-
-/* 전체 */
-.artist_area {
-    width: 810px;
-    height: 450px;
-    position: absolute;
-    top: 5%;
-    left: 40%;
-    overflow: hidden;
-}
-
-.artist_area>ul {
-    width: 1350px;
-    height: 450px;
-    position: absolute;
-}
-
-.all2 {
-    box-sizing: border-box;
-    margin-right: 20px;
-}
-
-
-/* 전체 끝 */
 
 #contents_in .collection_box2 {
     width: 100%;
     height: 650px;
     float: left;
     position: relative;
+    left: 30%;
+    top: 100px;
+    display: none;
 }
 
 #contents_in .control2 {
-    width: 500px;
+    padding-top: 0;
+    width: 50%;
     height: 650px;
     float: left;
-    padding-top: 50px;
     box-sizing: border-box;
 }
 
 #contents_in .control2 p {
     color: #b9956f;
-    font-size: 36px;
-    padding-left: 100px;
+    font-size: 3.6vw;
+    padding-left: 0;
 }
 
 #contents_in .control2 h2 {
-    font-size: 50px;
+    font-size: 4.5vw;
     color: #000;
-    padding-left: 100px;
+    padding-left: 0;
 }
 
 #contents_in .control2 .bg {
-    width: 500px;
+    width: 300px;
     height: 120px;
     background-color: rgb(141, 176, 241);
-    border: 1px solid #ccc;
+    border: 1px solid #000;
     border-left: none;
+    display: none;
 }
 
 #contents_in .control2 .bg p {
-    font-size: 20px;
+    font-size: 2vw;
     color: rgb(99, 99, 99)
 }
 
@@ -641,13 +640,15 @@
     width: 500px;
     height: 70px;
     float: left;
-    margin-top: 140px;
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
 }
 
 #contents_in .btns_in2 {
     width: 150px;
     height: 70px;
-    margin-left: 100px;
+    margin-left: 0;
     float: left;
 }
 
@@ -685,8 +686,11 @@
 #contents_in .artist1 {
     width: 250px;
     height: 450px;
-    float: left;
-    border: 1px solid #ccc;
+    float: right;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    position: absolute;
 }
 
 #contents_in .artist_img1 {
@@ -698,7 +702,6 @@
 #contents_in .artist_text1 {
     width: 100%;
     height: 140px;
-    border-top: 1px solid #ccc;
     padding: 15px 10px;
     box-sizing: border-box;
     font-size: 14px;
@@ -714,7 +717,6 @@
 #contents_in .artist_name1 {
     width: 100%;
     height: 60px;
-    border-top: 1px solid #ccc;
     float: left;
     line-height: 46px;
     box-sizing: border-box;
@@ -731,8 +733,10 @@
 #contents_in .artist2 {
     width: 250px;
     height: 450px;
-    border: 1px solid #ccc;
-    float: left;
+    float: right;
+    margin-top: 100px;
+    margin-right: 20px;
+    display: none;
 }
 
 #contents_in .artist_img2 {
@@ -744,7 +748,6 @@
 #contents_in .artist_text2 {
     width: 100%;
     height: 140px;
-    border-top: 1px solid #ccc;
     padding: 15px 10px;
     box-sizing: border-box;
     font-size: 14px;
@@ -760,7 +763,6 @@
 #contents_in .artist_name2 {
     width: 100%;
     height: 60px;
-    border-top: 1px solid #ccc;
     float: left;
     line-height: 46px;
     box-sizing: border-box;
@@ -777,8 +779,9 @@
 #contents_in .artist3 {
     width: 250px;
     height: 450px;
-    border: 1px solid #ccc;
     float: left;
+    margin-top: 100px;
+    display: none;
 }
 
 #contents_in .artist_img3 {
@@ -790,7 +793,6 @@
 #contents_in .artist_text3 {
     width: 100%;
     height: 140px;
-    border-top: 1px solid #ccc;
     padding: 15px 10px;
     box-sizing: border-box;
     font-size: 14px;
@@ -806,7 +808,6 @@
 #contents_in .artist_name3 {
     width: 100%;
     height: 60px;
-    border-top: 1px solid #ccc;
     float: left;
     line-height: 46px;
     box-sizing: border-box;
@@ -819,12 +820,14 @@
     color: #000;
 }
 
+
 /* 이벤트 */
 #contents_in .event {
     width: 100%;
     height: 650px;
     float: left;
-    margin-top: 100px;
+    margin-top: 200px;
+    display: none;
 }
 
 #contents_in .event>h2 {
@@ -833,7 +836,7 @@
 }
 
 #contents_in .event>h2>a {
-    font-size: 40px;
+    font-size: 4vw;
     color: #000;
     text-decoration: underline;
 }
@@ -842,6 +845,20 @@
     display: flex;
     justify-content: space-around;
 }
+
+#contents_in .event_img>li:last-child {
+    display: none;
+}
+
+#contents_in .event_img>li:nth-child(2) {
+    display: none;
+}
+
+#contents_in .event_img>li:nth-child(3) {
+    display: none;
+}
+
+
 
 #contents_in .event_img>li>a>img {
     width: 340px;
@@ -853,7 +870,7 @@
     float: left;
     width: 100%;
     height: 550px;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 #contents_in .gallery>h2 {
@@ -862,7 +879,7 @@
 }
 
 #contents_in .gallery>h2>a {
-    font-size: 40px;
+    font-size: 4vw;
     color: #000;
     text-decoration: underline;
 }
@@ -888,6 +905,18 @@
     height: 340px;
 }
 
+#contents_in .gallery_img>li:last-child {
+    display: none;
+}
+
+#contents_in .gallery_img>li:nth-child(2) {
+    display: none;
+}
+
+#contents_in .gallery_img>li:nth-child(3) {
+    display: none;
+}
+
 #contents_in .more {
     float: left;
     width: 100%;
@@ -896,7 +925,7 @@
 
 
 #contents_in .more a {
-    font-size: 40px;
+    font-size: 20px;
     text-decoration: underline;
     color: #000;
 }
@@ -911,8 +940,8 @@
 }
 
 #footer_in {
-    width: 1440px;
-    height: 480px;
+    width: 100%;
+    height: 250px;
     background-color: #302f2e;
     margin: 0 auto;
     position: relative;
@@ -921,15 +950,15 @@
 #footer_in .news {
     margin: 0 auto;
     margin-top: 40px;
-    width: 1300px;
-    height: 90px;
-    line-height: 90px;
+    width: 88%;
+    height: 40px;
+    line-height: 40px;
     border: 1px solid #000;
 }
 
 #footer_in .news li:first-child {
-    width: 200px;
-    height: 90px;
+    width: 12%;
+    height: 40px;
     background-color: #dcdcdc;
     border-right: 1px solid #000;
     box-sizing: border-box;
@@ -937,14 +966,14 @@
 
 #footer_in .news li {
     float: left;
-    width: 1100px;
-    height: 90px;
+    width: 88%;
+    height: 40px;
     text-align: center;
     background-color: #fff;
 }
 
 #footer_in .news li a {
-    font-size: 24px;
+    font-size: 2.4vw;
     color: #000;
 }
 
@@ -974,23 +1003,20 @@
 
 #footer_in .call li {
     color: #b9956f;
-    font-size: 24px;
-    padding: 20px 0;
+    font-size: 15px;
 }
 
-#footer_in .call li:last-child {
-    padding-bottom: 50px;
-}
+#footer_in .call li:last-child {}
 
 #footer_in .call li:first-child {
     padding-right: 40px;
 }
 
 #footer_in .address p {
+    float: left;
     color: #797877;
-
-    font-size: 16px;
-    padding: 5px 0;
+    font-size: 12px;
+    padding: 1px 0;
     box-sizing: border-box;
 }
 
@@ -1003,4 +1029,5 @@
     right: 0;
     bottom: 70px;
     padding-right: 10px;
+    display: none;
 }

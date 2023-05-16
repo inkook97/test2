@@ -1,0 +1,28 @@
+#wrap {
+    width: 100%;
+}
+
+#about {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#about>h1 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: #000;
+    font-size: 20px;
+    border-top: 1px solid rgb(212, 211, 211);
+    border-bottom: 1px solid rgb(212, 211, 211);
+}
+
+.img1 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+li {
+    font-size: 16px;
+    padding: 10px 0;
+}
