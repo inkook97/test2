@@ -614,12 +614,12 @@
     content: '';
 }
 
-.figure1_area{
+.figure1_area {
     width: 60%;
 }
 
 
-.artist_area{
+.artist_area {
     width: 60%;
 }
 
@@ -850,8 +850,7 @@
 
 #contents_in .more a {
     font-size: 4vw;
-    text-decoration: underline;
-    color: #000;
+    color: #555;
 }
 
 
