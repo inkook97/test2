@@ -2,8 +2,169 @@
     width: 100%;
 }
 
+#header {
+    width: 100%;
+}
+
+#header_in {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(72, 62, 50);
+    margin: 0 auto;
+    position: relative;
+    line-height: 100px;
+}
+
+#header_in .logo {
+    float: left;
+    margin-left: 250px;
+    line-height: 130px;
+}
+
+#header_in .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#header_in .nav li a:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 1s;
+    display: block;
+    border-radius: 2px;
+}
+
+#header_in .nav li a {
+    font-size: 16px;
+    color: white;
+    padding: 0px 10px;
+}
+
+#header_in .nav li:last-child {
+    padding-right: 400px;
+}
+
+#header_in .login_group {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-right: 250px;
+}
+
+#header_in .login_group li {
+    float: left;
+}
+
+#header_in .login_group li:after {
+    content: '|';
+    padding: 0 10px;
+    color: #fff;
+    font-size: 15px;
+}
+
+#header_in .login_group li:nth-child(2)::after {
+    content: '';
+    padding: 0 5px;
+}
+
+#header_in .login_group li:nth-child(3)::after {
+    content: '';
+    padding: 0 5px;
+}
+
+#header_in .login_group li:nth-child(3) {
+    line-height: 110px;
+}
+
+
+#header_in .login_group li a {
+    font-size: 16px;
+    color: #fff;
+}
+
+#header_in .btn_search {
+    width: 38px;
+    height: 28px;
+    cursor: pointer;
+    background-color: rgb(72, 62, 50);
+    border: none;
+    position: absolute;
+    top: 30px;
+}
+
+#header_in .btn_search span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+/* 풀스크린 */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/* 끝 */
+.login_group>li {
+    padding: 0;
+}
+
 #about {
     width: 1200px;
+    height: 1300px;
     margin: 0 auto;
 }
 
@@ -17,6 +178,10 @@
     border-bottom: 1px solid rgb(212, 211, 211);
 }
 
+.nav>li {
+    padding: 0;
+}
+
 .img1 {
     margin-top: 50px;
     text-align: center;
@@ -25,4 +190,109 @@
 li {
     font-size: 16px;
     padding: 10px 0;
+}
+
+/* 하단 */
+#footer {
+    width: 100%;
+    background-color: #302f2e;
+    float: left;
+}
+
+#footer_in {
+    width: 1440px;
+    height: 480px;
+    background-color: #302f2e;
+    margin: 0 auto;
+    position: relative;
+}
+
+#footer_in .news {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 1300px;
+    height: 90px;
+    line-height: 90px;
+    border: 1px solid #000;
+    padding: 0;
+}
+
+#footer_in .news li:first-child {
+    width: 200px;
+    height: 90px;
+    background-color: #dcdcdc;
+    border-right: 1px solid #000;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#footer_in .news li {
+    float: left;
+    width: 1100px;
+    height: 90px;
+    text-align: center;
+    background-color: #fff;
+    padding: 0;
+}
+
+#footer_in .news li a {
+    font-size: 24px;
+    color: #000;
+    padding: 0;
+}
+
+#footer_in .address {
+    float: left;
+    margin-top: 50px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+#footer_in .address ul {
+    float: left;
+}
+
+#footer_in .address li {
+    float: left;
+}
+
+#footer_in .privacy li {
+    padding-right: 64px;
+}
+
+#footer_in .privacy li a {
+    font-size: 16px;
+    color: #ffffff80;
+}
+
+#footer_in .call li {
+    color: #b9956f;
+    font-size: 24px;
+    padding: 20px 0;
+}
+
+#footer_in .call li:last-child {
+    padding-bottom: 50px;
+}
+
+#footer_in .call li:first-child {
+    padding-right: 40px;
+}
+
+#footer_in .address p {
+    color: #797877;
+    font-size: 16px;
+    padding: 5px 0;
+    box-sizing: border-box;
+}
+
+#footer_in .address p:last-child {
+    padding-top: 300px;
+}
+
+#footer_in .logo_b {
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+    padding-right: 10px;
 }

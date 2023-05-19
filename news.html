@@ -8,17 +8,57 @@
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/news.css">
     <title>news</title>
+    <script src="js/jquery.js"></script>
 </head>
 
 <body>
     <div id="wrap">
+        <header id="header">
+            <div id="header_in">
+                <div class="logo">
+                    <a href="./index.html"><img src="./images/logo_ty1.png" alt="logo" /></a>
+                </div>
+                <ul class="nav">
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./artist.html">ARTIST</a></li>
+                    <li><a href="./collection.html">COLLECTION</a></li>
+                    <li><a href="./information.html">INFORMATION</a></li>
+                    <li><a href="./news.html">NEWS</a></li>
+                </ul>
+                <ul class="login_group">
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Join</a></li>
+                    <li><a href=""><img src="./images/search.png" alt="" width="25px" height="25px"></a></li>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="overlay-content">
+                            <a href="#">ABOUT</a>
+                            <a href="#">ARTIST</a>
+                            <a href="#">COLLECTION</a>
+                            <a href="#">INFORMATION</a>
+                            <a href="#">NEWS</a>
+                        </div>
+                    </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                </ul>
+            </div>
+        </header>
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
         <div id="area">
-            <header class="tit">
+            <div class="tit">
                 <div class="t">
                     <strong>디오리지널홈갤러리의 성과</strong>
                 </div>
                 <div class="date"><span>입력 <em>2023.03.13</em></span></div>
-            </header>
+            </div>
             <div class="img">
                 <img src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202112/07/fddb50ae-a162-4fb4-a366-929f9a50e280.jpg"
                     alt="">
@@ -34,6 +74,39 @@
                 얼마나 어려운지 짐작할 수
                 있다.</p>
         </div>
+        <footer id="footer">
+            <div id="footer_in">
+                <!-- 공지사항 -->
+                <ul class="news">
+                    <li><a href="">Notice</a></li>
+                    <li>
+                        <a href="">
+                            [대관공고] 2023년 부산미술관(2관) 수시 대관 공고문
+                        </a>
+                    </li>
+                </ul>
+                <!-- 주소 -->
+                <div class="address">
+                    <ul class="privacy">
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                    </ul>
+                    <br />
+                    <ul class="call">
+                        <li>디 오리지널 홈갤러리</li>
+                        <li>고객센터 1666-6457</li>
+                    </ul>
+                    <!-- <br /> -->
+                    <p>13544 경기 성남시 분당구 판교대장로7길 16-6 (대장동) 1층</p>
+                    <p>상호 : (주)하비우드</p>
+                    <p>대표자 : 전익관</p>
+                    <p>통신판매업신고번호 : 제2021-서울서초-1248호</p>
+                    <p>사업자등록번호 : 145-88-01125</p>
+                    <p>Copyright(C) 2021 HOBBYWOOD CO., Ltd. All Rights Reserved</p>
+                    <span class="logo_b"><img src="./images/logo_ty3.png" alt=""></span>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 
